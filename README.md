@@ -79,3 +79,9 @@ static ip_address=[STATIC IP ADDRESS YOU WANT FOR THE RPI]/24
 Pihole should give you a link (it's the static IP of your rpi with `/admin` added on) and a default password to log in with. You can use this to look at blocked queries, manage Pihole without SSHing into your rpi, etc.
 
 I did the whole set up without GUI, it's pretty simple overall
+
+#### Maintaing and adding onto your blocklist/allowlist
+
+Once you do the initial setup, feel free to look around for different blocklists. Grabbing the raw file on github, you can easily feed it into the Lists on the web UI and run `sudo pihole -g` on your device to add them to the database.
+
+I am going through (this repo)[https://github.com/hagezi/dns-blocklists] for example, and grabbing lists which make sense to me
