@@ -63,7 +63,7 @@ static ip_address=[STATIC IP ADDRESS YOU WANT FOR THE RPI]/24
 #### Set up blacklist
 
 1. Grab this script to populate your blacklist from a list of hosts: `wget https://gist.githubusercontent.com/hunterkepley/c0c54308b3d111d4ca3528a2b612e244/raw/64b85a60d9c0ee85dfcfd798431ab506cc76c704/sh`
-2. Grab list of hosts (of your choosing, I am using [this one|https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts]. using `wget` to make it easy
+2. Grab list of hosts (of your choosing, I am using [this one](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts). using `wget` to make it easy
 3. Make sure you're in `~/`
 4. Run `mkdir src`, `mkdir src/out`, `touch src/out/combined.raw`
 5. If you need to run `pihole -g` using sudo, edit that portion of the script to include it. Doesn't matter, you can run after the script is done anyway
