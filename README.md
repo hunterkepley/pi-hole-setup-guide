@@ -94,3 +94,9 @@ I am going through (this repo)[https://github.com/hagezi/dns-blocklists] for exa
 One thing you can do, is run the script on a copy of your blacklist. `pihole -g` will tell you how many duplicates you have, and running the script is an easy way to clean it up. It will take time, but you can run-it-and-forget-it.
 
 To do so, make a copy of your blacklist, clear the original, and run it using the copied blacklist. This way it doesnt combine with your existing blacklist
+
+#### DNS settings on router
+
+Ideally, you want only pi hole as your DNS server. If this is not working well due to load/time down/etc, you can set up a second pi hole device (on another rpi, or wherever) as a secondary DNS. Another option is using an ad-blocking DNS if you want at *least* that functionality.
+
+If you have `8.8.8.8` or another normal DNS as your secondary DNS, you will still receive some blocked traffic
