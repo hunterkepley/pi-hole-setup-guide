@@ -21,8 +21,9 @@ This blacklist is update often, and this guide will include a script to pull a n
 
 ### Prerequisites
 
-1. A device capable of running Pihole (https://pi-hole.net/)
+1. A device capable of running [Pihole](https://pi-hole.net/)
  a. This can be pretty much any OS if you want to use a container. This guide will cover the automated installer on a Raspberry Pi
+ b. Boons of using a container are obvious but useful if you dont want a separate device dedicated (or even if you do). Always runs on startup, doesnt go down, etc
 
 .. Thats it
 
@@ -70,6 +71,8 @@ static ip_address=[STATIC IP ADDRESS YOU WANT FOR THE RPI]/24
 6. `chmod +x` the script to make it executable
 7. Run the script
 8. Profit
+
+###### *Important*: This blacklist list is ENORMOUS. The script pings hosts it finds, and if your router can access them, it adds them to your blacklist (does not replace the blacklist). This will take forever to run, on a Raspberry pi, since it's slow + a slow process. You may want to run this on a faster computer, then put the blacklist output on your rpi. 
 
 #### Logging into the web interface
 
