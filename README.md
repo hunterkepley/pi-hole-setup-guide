@@ -17,6 +17,8 @@ While it does all of these things, it's not a perfect solution. This guide uses 
 
 This blacklist is update often, and this guide will include a script to pull a new version and update your blacklist file any time you want (can be run from an SSH session for ease-of-use)
 
+But, this blacklist will not block everything you want. Or it may. Depends on what you want out of this. I have over 600k blocked and I'm getting to a good point in my eyes, there's lists for everything you may want to block online including regex (which can be put in via the CLI or website)
+
 ----------------------
 
 ### Prerequisites
