@@ -89,3 +89,6 @@ I did the whole set up without GUI, it's pretty simple overall
 Once you do the initial setup, feel free to look around for different blocklists. Grabbing the raw file on github, you can easily feed it into the Lists on the web UI and run `sudo pihole -g` on your device to add them to the database.
 
 I am going through (this repo)[https://github.com/hagezi/dns-blocklists] for example, and grabbing lists which make sense to me
+
+
+One thing you can do, is run the script on a copy of your blacklist. `pihole -g` will tell you how many duplicates you have, and running the script is an easy way to clean it up. It will take time, but you can run-it-and-forget-it.
