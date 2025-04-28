@@ -61,10 +61,6 @@ static ip_address=[STATIC IP ADDRESS YOU WANT FOR THE RPI]/24
 
 #### Set up blacklist
 
-2. Run through the install script, making choices of your desires
-
-#### Set up blacklist
-
 ##### The script is optional, you can add links to files on the web that contain lists on the UI, and run `sudo pihole -g` to populate the DB. This script makes sure the address is reachable by your router, before it adds, to not populate with useless addresses (duplicates, out-of-your-country, already blocked by your ISP, etc)
 
 1. Grab this script to populate your blacklist from a list of hosts: `wget https://gist.githubusercontent.com/hunterkepley/c0c54308b3d111d4ca3528a2b612e244/raw/64b85a60d9c0ee85dfcfd798431ab506cc76c704/sh`
