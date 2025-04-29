@@ -96,3 +96,9 @@ To do so, make a copy of your blacklist, clear the original, and run it using th
 Ideally, you want only pi hole as your DNS server. If this is not working well due to load/time down/etc, you can set up a second pi hole device (on another rpi, or wherever) as a secondary DNS. Another option is using an ad-blocking DNS if you want at *least* that functionality.
 
 If you have `8.8.8.8` or another normal DNS as your secondary DNS, you will still receive some blocked traffic
+
+#### About Logging and bad performance
+
+Logging queries takes up a LOT of resources on an rpi. I recommend turning it off once youre in a good spot and are happy with what is blocked/what is not. You can always re-enable this later. In my personal setup, I have one RPi doing logging + the main workload, and a Pi Zero for doing the work it can't with logging disabled.
+
+At the end of the day, it's all about what fits your setup. I'm going to use a 3rd and 4th eventually for other projects, and may use some of the resources on the Zero for communication between those 2.
